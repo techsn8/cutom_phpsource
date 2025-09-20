@@ -9,11 +9,11 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN a2enmod rewrite
 
 # Set the working directory inside the container
-WORKDIR /var/www/html
+WORKDIR /var/www/php
 
 # Copy the application code into the container's working directory
 # The '.' refers to the current directory where the Dockerfile is located
-COPY . /var/www/html
+COPY . /var/www/php
 
 # Expose port 80 for the web server (Apache)
 EXPOSE 80
