@@ -16,7 +16,7 @@ WORKDIR /var/www/php
 COPY . /var/www/php
 
 # Expose port 80 for the web server (Apache)
-EXPOSE 80
+EXPOSE 8088
 
 # The default command for the base image will start Apache
 # No explicit CMD or ENTRYPOINT is typically needed for php:apache images
